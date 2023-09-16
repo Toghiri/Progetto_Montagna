@@ -15,6 +15,7 @@ The project adhere to the semantic commit convention.
 - **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - **test**: Adding missing tests or correcting existing tests
 - **revert**: Revert a previous commit. Please add a reference to reverted commit (Refs: a215868)
+- **other**: Something else
 
 ## Licence
 
