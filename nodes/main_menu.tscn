@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="4_mfbfa"]
 [ext_resource type="AudioStream" uid="uid://cw876uc5fbrpi" path="res://assets/media/audio/mmm2.mp3" id="5_6nopu"]
 
-[node name="ContMenurol" type="Control"]
+[node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,13 +17,13 @@ script = ExtResource("1_i6rdj")
 
 [node name="bg" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(611, 420)
-scale = Vector2(0.228766, 0.27991)
+position = Vector2(960.5, 541.169)
+scale = Vector2(0.360229, 0.351312)
 texture = ExtResource("2_2x0uw")
 
 [node name="bg2" type="Sprite2D" parent="."]
-position = Vector2(583.498, 330.154)
-scale = Vector2(1.8, 2.202)
+position = Vector2(946.122, 541.397)
+scale = Vector2(2.75932, 3.37557)
 texture = ExtResource("3_x1b60")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
@@ -39,7 +39,7 @@ offset_right = 43.0
 offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 60
+theme_override_constants/separation = 150
 
 [node name="Label" type="Label" parent="VBoxContainer2"]
 layout_mode = 2
@@ -50,7 +50,7 @@ theme_override_constants/shadow_offset_x = 10
 theme_override_constants/shadow_offset_y = -10
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("4_mfbfa")
-theme_override_font_sizes/font_size = 128
+theme_override_font_sizes/font_size = 256
 text = "PROGETTO_
 _MONTAGNA"
 
@@ -65,21 +65,23 @@ theme_override_constants/separation = 30
 layout_mode = 2
 focus_neighbor_top = NodePath("../QuitButton")
 theme_override_fonts/font = ExtResource("4_mfbfa")
-theme_override_font_sizes/font_size = 64
-text = " START "
+theme_override_font_sizes/font_size = 128
+text = " QUICK START "
 
-[node name="CreditButton" type="Button" parent="VBoxContainer2/CenterContainer/Bottoni"]
+[node name="LevelButton" type="Button" parent="VBoxContainer2/CenterContainer/Bottoni"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_mfbfa")
-theme_override_font_sizes/font_size = 64
-text = " CREDIT "
+theme_override_font_sizes/font_size = 128
+text = " LEVELS "
 
 [node name="QuitButton" type="Button" parent="VBoxContainer2/CenterContainer/Bottoni"]
 layout_mode = 2
 size_flags_horizontal = 4
 focus_neighbor_bottom = NodePath("../StartButton")
 theme_override_fonts/font = ExtResource("4_mfbfa")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 text = " QUIT "
 
 [node name="Label2" type="Label" parent="."]
@@ -106,5 +108,5 @@ stream = ExtResource("5_6nopu")
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer2/CenterContainer/Bottoni/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer2/CenterContainer/Bottoni/CreditButton" to="." method="_on_credit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/CenterContainer/Bottoni/LevelButton" to="." method="_on_level_button_pressed"]
 [connection signal="pressed" from="VBoxContainer2/CenterContainer/Bottoni/QuitButton" to="." method="_on_quit_button_pressed"]

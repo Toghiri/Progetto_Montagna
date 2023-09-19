@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://023b2i5x3wn8"]
+
+[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_krqn6"]
+[ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="2_ye0qs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xfgwp"]
+bg_color = Color(0, 0, 0, 0.2)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.890196, 0, 0, 1)
+border_blend = true
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_krqn6")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xfgwp")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Raws" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 130
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/Raws"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_ye0qs")
+theme_override_font_sizes/font_size = 150
+text = "PAUSE"
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer/Raws"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Raws/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+
+[node name="RestartButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../ResumeButton")
+theme_override_fonts/font = ExtResource("2_ye0qs")
+theme_override_font_sizes/font_size = 64
+text = " RESTART "
+
+[node name="ResumeButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../RestartButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+theme_override_fonts/font = ExtResource("2_ye0qs")
+theme_override_font_sizes/font_size = 64
+text = "RESUME "
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../ResumeButton")
+focus_neighbor_bottom = NodePath("../RestartButton")
+theme_override_fonts/font = ExtResource("2_ye0qs")
+theme_override_font_sizes/font_size = 64
+text = " QUIT "
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
