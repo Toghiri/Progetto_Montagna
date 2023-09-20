@@ -13,7 +13,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	else:
-		if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
+		if Input.is_action_pressed("left") or Input.is_action_pressed("right") or Input.is_action_pressed("attack"):
 			if Input.is_action_pressed("left"):
 				animation.play("run")
 				$AnimatedSprite2D.flip_h = true
