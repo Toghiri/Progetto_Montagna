@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://wgjcin8l0yxb"]
+[gd_scene load_steps=18 format=3 uid="uid://wgjcin8l0yxb"]
 
 [ext_resource type="Script" path="res://scripts/lv_1.gd" id="1_nefpb"]
 [ext_resource type="Texture2D" uid="uid://vwmsx2vhi2yv" path="res://assets/media/background/Background_2.png" id="2_7t5aw"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://chvlo4eiw51ay" path="res://assets/media/audio/mlv1.mp3" id="5_fwnsc"]
 [ext_resource type="Texture2D" uid="uid://uh4q4fmqpmyo" path="res://assets/media/background/ParallaxBG/Layer 5.png" id="6_25b0x"]
 [ext_resource type="Texture2D" uid="uid://tmsc6cfh3o7a" path="res://assets/media/background/ParallaxBG/Layer 6.png" id="7_7xw33"]
+[ext_resource type="PackedScene" uid="uid://bj35es1pqfsdx" path="res://nodes/orso.tscn" id="12_kk74b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ly7cg"]
 texture = ExtResource("3_wwg7o")
@@ -1005,8 +1006,11 @@ zoom = Vector2(3, 3)
 position = Vector2(1000, 440)
 shape = SubResource("RectangleShape2D_7k2u1")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_fwnsc")
 autoplay = true
+
+[node name="Orso" parent="." instance=ExtResource("12_kk74b")]
+position = Vector2(297, 516)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
