@@ -1,0 +1,203 @@
+[gd_scene load_steps=23 format=3 uid="uid://bj35es1pqfsdx"]
+
+[ext_resource type="Script" path="res://scripts/orso.gd" id="1_cc4aa"]
+[ext_resource type="Texture2D" uid="uid://dwbwi4tvhxm01" path="res://assets/media/entity/Bear.png" id="2_akwjn"]
+[ext_resource type="Texture2D" uid="uid://c5bkfgowetmuv" path="res://assets/media/entity/spritesheet.png" id="2_lya56"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4sok"]
+size = Vector2(23, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbq1j"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(0, 192, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0nt0"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(24, 192, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkheq"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(48, 192, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ist3g"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(72, 192, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2ggw"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(0, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3u8r"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(24, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yjtb"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(48, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wq3o"]
+atlas = ExtResource("2_akwjn")
+region = Rect2(72, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t82v"]
+atlas = ExtResource("2_lya56")
+region = Rect2(0, 288, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djtuq"]
+atlas = ExtResource("2_lya56")
+region = Rect2(16, 288, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srvhy"]
+atlas = ExtResource("2_lya56")
+region = Rect2(32, 288, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3puf8"]
+atlas = ExtResource("2_lya56")
+region = Rect2(48, 288, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8xs4g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbq1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0nt0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkheq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ist3g")
+}],
+"loop": true,
+"name": &"orso2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2ggw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3u8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yjtb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wq3o")
+}],
+"loop": true,
+"name": &"orso2_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0t82v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djtuq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srvhy")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_3puf8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgw2s"]
+size = Vector2(23, 6)
+
+[sub_resource type="Animation" id="Animation_ujdwq"]
+resource_name = "Movimento"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AreaOrso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(130, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_241yf"]
+resource_name = "Movimento2"
+length = 5.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AreaOrso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.6, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(150, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ukujk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AreaOrso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ycak7"]
+_data = {
+"Movimento": SubResource("Animation_ujdwq"),
+"Movimento2": SubResource("Animation_241yf"),
+"RESET": SubResource("Animation_ukujk")
+}
+
+[node name="Orso" type="Node2D"]
+script = ExtResource("1_cc4aa")
+
+[node name="AreaOrso" type="Area2D" parent="."]
+
+[node name="CollisionPrincipale" type="CollisionShape2D" parent="AreaOrso"]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_f4sok")
+
+[node name="Sprite2D" type="Sprite2D" parent="AreaOrso"]
+visible = false
+position = Vector2(-5.13703, -0.25)
+scale = Vector2(3.415, 1)
+texture = ExtResource("2_akwjn")
+
+[node name="AnimazioneOrso" type="AnimatedSprite2D" parent="AreaOrso"]
+sprite_frames = SubResource("SpriteFrames_8xs4g")
+animation = &"orso2"
+
+[node name="Area2Dkill" type="Area2D" parent="AreaOrso"]
+
+[node name="Collisionkill" type="CollisionShape2D" parent="AreaOrso/Area2Dkill"]
+position = Vector2(-0.5, -8)
+shape = SubResource("RectangleShape2D_kgw2s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Movimento"
+libraries = {
+"": SubResource("AnimationLibrary_ycak7")
+}
+
+[connection signal="body_entered" from="AreaOrso" to="." method="_on_area_orso_body_entered"]
+[connection signal="body_entered" from="AreaOrso/Area2Dkill" to="." method="_on_area_2_dkill_body_entered"]

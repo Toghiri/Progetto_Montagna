@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://s62m442mf620"]
+[gd_scene load_steps=41 format=3 uid="uid://s62m442mf620"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_djor1"]
 [ext_resource type="Texture2D" uid="uid://ddmdo8ltufduj" path="res://assets/media/entity/player/char_blue.png" id="2_d3qyl"]
@@ -92,6 +92,30 @@ region = Rect2(336, 224, 56, 56)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ec3qm"]
 atlas = ExtResource("2_d3qyl")
 region = Rect2(392, 224, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vaf60"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(0, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrryv"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(56, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smbt0"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(112, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8i1t"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(168, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6eqe5"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(224, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0nln"]
+atlas = ExtResource("2_d3qyl")
+region = Rect2(280, 56, 56, 56)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_drdwy"]
 atlas = ExtResource("2_d3qyl")
@@ -205,6 +229,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_vaf60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrryv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smbt0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8i1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6eqe5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0nln")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_drdwy")
 }, {
 "duration": 1.0,
@@ -233,7 +280,7 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_djor1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -251,6 +298,6 @@ vframes = 6
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -12)
 sprite_frames = SubResource("SpriteFrames_sd461")
-animation = &"idle"
-frame = 4
-frame_progress = 0.148595
+animation = &"new_animation"
+frame = 5
+frame_progress = 0.744418

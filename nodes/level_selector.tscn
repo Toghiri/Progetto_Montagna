@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ccqv1lye27c0l"]
 
-[ext_resource type="Script" path="res://level_selector.gd" id="1_5aadg"]
-[ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="1_8r1g5"]
+[ext_resource type="Script" path="res://scripts/level_selector.gd" id="1_ntws2"]
+[ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="2_x1je5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vsvi"]
 bg_color = Color(0, 0, 0, 0.2)
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_5aadg")
+script = ExtResource("1_ntws2")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -50,7 +50,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 10
 theme_override_constants/shadow_offset_y = -10
 theme_override_constants/outline_size = 5
-theme_override_fonts/font = ExtResource("1_8r1g5")
+theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 150
 text = "LEVELS"
 
@@ -67,7 +67,7 @@ layout_mode = 2
 size_flags_vertical = 8
 focus_neighbor_top = NodePath("../Lvl2")
 focus_neighbor_bottom = NodePath("../Lvl2")
-theme_override_fonts/font = ExtResource("1_8r1g5")
+theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 128
 text = " 1 "
 
@@ -77,7 +77,7 @@ layout_mode = 2
 size_flags_vertical = 8
 focus_neighbor_top = NodePath("../Lvl1")
 focus_neighbor_bottom = NodePath("../Lvl1")
-theme_override_fonts/font = ExtResource("1_8r1g5")
+theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 128
 text = " 2 "
 
