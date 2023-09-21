@@ -27,6 +27,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_0vsvi")
@@ -46,7 +47,7 @@ theme_override_constants/margin_bottom = 40
 [node name="Raws" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 4
-theme_override_constants/separation = 250
+theme_override_constants/separation = 200
 
 [node name="Title" type="Label" parent="PanelContainer/MarginContainer/Raws"]
 layout_mode = 2
@@ -72,9 +73,9 @@ process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
 focus_neighbor_left = NodePath("../Lvl2")
-focus_neighbor_top = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../../VBoxContainer/Back")
 focus_neighbor_right = NodePath("../Lvl2")
-focus_neighbor_bottom = NodePath("../../../Back")
+focus_neighbor_bottom = NodePath("../../../VBoxContainer/Panorama")
 theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 128
 text = " 1 "
@@ -84,26 +85,44 @@ process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
 focus_neighbor_left = NodePath("../Lvl1")
-focus_neighbor_top = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../../VBoxContainer/Back")
 focus_neighbor_right = NodePath("../Lvl1")
-focus_neighbor_bottom = NodePath("../../../Back")
+focus_neighbor_bottom = NodePath("../../../VBoxContainer/Panorama")
 theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 128
 text = " 2 "
 
-[node name="Back" type="Button" parent="PanelContainer/MarginContainer/Raws"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Raws"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Panorama" type="Button" parent="PanelContainer/MarginContainer/Raws/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_neighbor_left = NodePath("../../CenterContainer/HBoxContainer/Lvl1")
+focus_neighbor_top = NodePath("../../CenterContainer/HBoxContainer/Lvl1")
+focus_neighbor_right = NodePath("../../CenterContainer/HBoxContainer/Lvl2")
+focus_neighbor_bottom = NodePath("../Back")
+theme_override_fonts/font = ExtResource("2_x1je5")
+theme_override_font_sizes/font_size = 128
+text = " PANORAMA "
+
+[node name="Back" type="Button" parent="PanelContainer/MarginContainer/Raws/VBoxContainer"]
 process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-focus_neighbor_left = NodePath("../CenterContainer/HBoxContainer/Lvl2")
-focus_neighbor_top = NodePath("../CenterContainer/HBoxContainer/Lvl1")
-focus_neighbor_right = NodePath("../CenterContainer/HBoxContainer/Lvl2")
-focus_neighbor_bottom = NodePath("../CenterContainer/HBoxContainer/Lvl2")
+focus_neighbor_left = NodePath("../../CenterContainer/HBoxContainer/Lvl2")
+focus_neighbor_top = NodePath("../Panorama")
+focus_neighbor_right = NodePath("../../CenterContainer/HBoxContainer/Lvl2")
+focus_neighbor_bottom = NodePath("../../CenterContainer/HBoxContainer/Lvl2")
 theme_override_fonts/font = ExtResource("2_x1je5")
 theme_override_font_sizes/font_size = 128
 text = " BACK "
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/HBoxContainer/Lvl1" to="." method="_on_lvl_1_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/HBoxContainer/Lvl2" to="." method="_on_lvl_2_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/VBoxContainer/Panorama" to="." method="_on_panorama_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/VBoxContainer/Back" to="." method="_on_back_pressed"]
