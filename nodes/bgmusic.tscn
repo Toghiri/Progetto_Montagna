@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://7sqe78syj0vf"]
 
-[ext_resource type="AudioStream" uid="uid://cw876uc5fbrpi" path="res://assets/media/audio/mmm2.mp3" id="1_exmxm"]
+[ext_resource type="AudioStream" uid="uid://cw876uc5fbrpi" path="res://assets/audio/mmm2.mp3" id="1_nisu3"]
 
 [node name="mmbgmusic" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_exmxm")
+stream = ExtResource("1_nisu3")

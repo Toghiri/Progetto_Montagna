@@ -59,20 +59,42 @@ process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
 focus_neighbor_top = NodePath("../QuitButton")
-focus_neighbor_bottom = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../LevelsButton")
 theme_override_fonts/font = ExtResource("2_t5e35")
 theme_override_font_sizes/font_size = 64
 text = " RESTART "
+
+[node name="LevelsButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../RestartButton")
+focus_neighbor_bottom = NodePath("../MMButton")
+theme_override_fonts/font = ExtResource("2_t5e35")
+theme_override_font_sizes/font_size = 64
+text = "LEVELS"
+
+[node name="MMButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../LevelsButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+theme_override_fonts/font = ExtResource("2_t5e35")
+theme_override_font_sizes/font_size = 64
+text = " MAIN MENU "
 
 [node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer"]
 process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
-focus_neighbor_top = NodePath("../RestartButton")
+focus_neighbor_top = NodePath("../MMButton")
 focus_neighbor_bottom = NodePath("../RestartButton")
 theme_override_fonts/font = ExtResource("2_t5e35")
 theme_override_font_sizes/font_size = 64
 text = " QUIT "
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/LevelsButton" to="." method="_on_levels_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/MMButton" to="." method="_on_mm_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

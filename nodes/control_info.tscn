@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp4oas5hvi2u2"]
+
+[ext_resource type="Texture2D" uid="uid://cs2vnpoy6vifn" path="res://assets/media/background/menu/controlbg.jpg" id="1_4as1i"]
+[ext_resource type="Script" path="res://scripts/control_info.gd" id="1_w3qlm"]
+[ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="2_nhr4k"]
+
+[node name="Control_info" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w3qlm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1049, 683)
+scale = Vector2(2.68356, 1.37326)
+texture = ExtResource("1_4as1i")
+
+[node name="Back" type="Button" parent="."]
+process_mode = 3
+layout_mode = 2
+offset_left = 1547.0
+offset_top = 942.0
+offset_right = 1837.0
+offset_bottom = 1024.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 128
+text = " BACK "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 480.0
+offset_top = 104.0
+offset_right = 1440.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 256
+text = "CONTROLS"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -467.0
+offset_top = 15.0
+offset_right = 467.0
+offset_bottom = 503.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 128
+text = "LEFT:    A    /    <-"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 128
+text = "RIGHT:    D    /    ->"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 128
+text = "JUMP:    W    /    SPACE"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
