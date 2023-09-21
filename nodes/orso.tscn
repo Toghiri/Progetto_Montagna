@@ -1,58 +1,58 @@
 [gd_scene load_steps=23 format=3 uid="uid://bj35es1pqfsdx"]
 
 [ext_resource type="Script" path="res://scripts/orso.gd" id="1_cc4aa"]
-[ext_resource type="Texture2D" uid="uid://dwbwi4tvhxm01" path="res://assets/media/entity/Bear.png" id="2_akwjn"]
-[ext_resource type="Texture2D" uid="uid://c5bkfgowetmuv" path="res://assets/media/entity/spritesheet.png" id="2_lya56"]
+[ext_resource type="Texture2D" uid="uid://dwbwi4tvhxm01" path="res://assets/entities/orso/Bear.png" id="2_b1gxq"]
+[ext_resource type="Texture2D" uid="uid://c5bkfgowetmuv" path="res://assets/entities/spritesheet.png" id="3_yfolq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f4sok"]
 size = Vector2(23, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cbq1j"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(0, 192, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j0nt0"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(24, 192, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wkheq"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(48, 192, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ist3g"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(72, 192, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b2ggw"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(0, 216, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3u8r"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(24, 216, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5yjtb"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(48, 216, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4wq3o"]
-atlas = ExtResource("2_akwjn")
+atlas = ExtResource("2_b1gxq")
 region = Rect2(72, 216, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0t82v"]
-atlas = ExtResource("2_lya56")
+atlas = ExtResource("3_yfolq")
 region = Rect2(0, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_djtuq"]
-atlas = ExtResource("2_lya56")
+atlas = ExtResource("3_yfolq")
 region = Rect2(16, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_srvhy"]
-atlas = ExtResource("2_lya56")
+atlas = ExtResource("3_yfolq")
 region = Rect2(32, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3puf8"]
-atlas = ExtResource("2_lya56")
+atlas = ExtResource("3_yfolq")
 region = Rect2(48, 288, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8xs4g"]
@@ -110,7 +110,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgw2s"]
-size = Vector2(23, 6)
+size = Vector2(14, 6)
 
 [sub_resource type="Animation" id="Animation_ujdwq"]
 resource_name = "Movimento"
@@ -181,7 +181,7 @@ shape = SubResource("RectangleShape2D_f4sok")
 visible = false
 position = Vector2(-5.13703, -0.25)
 scale = Vector2(3.415, 1)
-texture = ExtResource("2_akwjn")
+texture = ExtResource("2_b1gxq")
 
 [node name="AnimazioneOrso" type="AnimatedSprite2D" parent="AreaOrso"]
 sprite_frames = SubResource("SpriteFrames_8xs4g")
@@ -190,7 +190,7 @@ animation = &"orso2"
 [node name="Area2Dkill" type="Area2D" parent="AreaOrso"]
 
 [node name="Collisionkill" type="CollisionShape2D" parent="AreaOrso/Area2Dkill"]
-position = Vector2(-0.5, -8)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_kgw2s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

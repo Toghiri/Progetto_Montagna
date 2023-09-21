@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cke3aci3vnkoy"]
+
+[ext_resource type="Script" path="res://scripts/spikes.gd" id="1_po8qm"]
+[ext_resource type="Texture2D" uid="uid://d0f6xk165p6wb" path="res://assets/media/tiles/Idle.png" id="2_achhx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpqv4"]
+size = Vector2(13, 6)
+
+[node name="spikes" type="Node2D"]
+script = ExtResource("1_po8qm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_achhx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 5)
+shape = SubResource("RectangleShape2D_tpqv4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
