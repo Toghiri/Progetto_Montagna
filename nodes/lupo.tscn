@@ -3,9 +3,6 @@
 [ext_resource type="Script" path="res://scripts/lupo.gd" id="1_otyr0"]
 [ext_resource type="Texture2D" uid="uid://k3a273r5e37i" path="res://assets/entities/lupo/Wolf.png" id="2_d7yhp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4sok"]
-size = Vector2(22, 13)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_86vma"]
 atlas = ExtResource("2_d7yhp")
 region = Rect2(0, 128, 16, 16)
@@ -42,8 +39,11 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4sok"]
+size = Vector2(30, 16)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgw2s"]
-size = Vector2(16, 5)
+size = Vector2(21, 5)
 
 [sub_resource type="Animation" id="Animation_ujdwq"]
 resource_name = "Movimento"
@@ -59,7 +59,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(200, 0)]
+"values": [Vector2(0, 0), Vector2(250, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_241yf"]
@@ -106,10 +106,6 @@ script = ExtResource("1_otyr0")
 
 [node name="AreaLupo" type="Area2D" parent="."]
 
-[node name="CollisionPrincipale" type="CollisionShape2D" parent="AreaLupo"]
-position = Vector2(-1, 2.5)
-shape = SubResource("RectangleShape2D_f4sok")
-
 [node name="Sprite2D" type="Sprite2D" parent="AreaLupo"]
 visible = false
 scale = Vector2(1.5, 1.5)
@@ -118,14 +114,18 @@ hframes = 4
 vframes = 16
 
 [node name="AnimazioneLupo" type="AnimatedSprite2D" parent="AreaLupo"]
-scale = Vector2(1.5, 1.5)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_8xs4g")
 animation = &"walk"
+
+[node name="CollisionPrincipale" type="CollisionShape2D" parent="AreaLupo"]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_f4sok")
 
 [node name="Area2Dkill" type="Area2D" parent="AreaLupo"]
 
 [node name="Collisionkill" type="CollisionShape2D" parent="AreaLupo/Area2Dkill"]
-position = Vector2(-1, -6.5)
+position = Vector2(-0.5, -6.5)
 shape = SubResource("RectangleShape2D_kgw2s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
