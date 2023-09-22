@@ -50,6 +50,24 @@ theme_override_font_sizes/font_size = 256
 text = "CONTROLS"
 horizontal_alignment = 1
 
+[node name="Label5" type="Label" parent="."]
+layout_mode = 2
+offset_left = 318.0
+offset_top = 775.0
+offset_right = 1602.0
+offset_bottom = 929.0
+size_flags_horizontal = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_nhr4k")
+theme_override_font_sizes/font_size = 128
+text = "JUMP OVER THE ANIMALS TO 
+PUT THEM IN SLEEP MODE"
+horizontal_alignment = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -57,10 +75,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -467.0
-offset_top = 15.0
-offset_right = 467.0
-offset_bottom = 503.0
+offset_left = -761.0
+offset_top = -113.0
+offset_right = 761.0
+offset_bottom = 158.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
