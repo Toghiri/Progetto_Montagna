@@ -1,11 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnle6r8dnibar"]
+[gd_scene load_steps=5 format=3 uid="uid://cnle6r8dnibar"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_i6rdj"]
-[ext_resource type="Texture2D" uid="uid://cahkt35dol16k" path="res://assets/media/background/menu/mmbg2.jpg" id="2_0e7dw"]
-[ext_resource type="Texture2D" uid="uid://cvak2p0r7qyi7" path="res://assets/media/background/menu/mmbg.jpg" id="3_xegy4"]
 [ext_resource type="Texture2D" uid="uid://bacr6fyuxwhia" path="res://assets/media/background/menu/mmbg3.jpg" id="4_cfurm"]
 [ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="4_mfbfa"]
-[ext_resource type="AudioStream" uid="uid://cw876uc5fbrpi" path="res://assets/audio/mmm2.mp3" id="5_4d2gc"]
+[ext_resource type="AudioStream" uid="uid://bckt50k8uropj" path="res://assets/audio/mmm.mp3" id="6_5m4a0"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,18 +13,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i6rdj")
-
-[node name="bg" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(960.5, 541.169)
-scale = Vector2(0.360229, 0.351312)
-texture = ExtResource("2_0e7dw")
-
-[node name="bg2" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(946.122, 541.397)
-scale = Vector2(2.75932, 3.37557)
-texture = ExtResource("3_xegy4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1045, 756)
@@ -143,7 +129,7 @@ theme_override_font_sizes/font_size = 48
 text = "by Pietro Vaccari"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_4d2gc")
+stream = ExtResource("6_5m4a0")
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer2/CenterContainer/HBoxContainer/Bottoni/StartButton" to="." method="_on_start_button_pressed"]

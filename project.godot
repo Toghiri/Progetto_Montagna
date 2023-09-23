@@ -11,19 +11,20 @@ config_version=5
 [application]
 
 config/name="Progetto_Montagna"
+config/description="A very simple scrolling 2D platformer in the environment of Trentino (IT).
+
+The project originally was a challenge to develop a full game in 5 days during a vacation in Trentino Alto-Adige, completed with v1.0."
 run/main_scene="res://nodes/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://assets/media/icon.jpg"
-
-[autoload]
-
-Bgmusic="*res://nodes/bgmusic.tscn"
+boot_splash/image="res://assets/media/loading.png"
+config/icon="res://assets/media/icon.png"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+mouse_cursor/custom_image="res://assets/media/cursor.png"
 
 [dotnet]
 
@@ -117,3 +118,4 @@ MobRight={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.227451, 0.227451, 0.227451, 1)

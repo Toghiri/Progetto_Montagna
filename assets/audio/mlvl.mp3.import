@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://celu2166kyoe4"
+uid="uid://etsdlkaiuaqp"
 path="res://.godot/imported/mlvl.mp3-0130eeac78dc619a7308bb7a8f02c335.mp3str"
 
 [deps]
@@ -14,6 +14,6 @@ dest_files=["res://.godot/imported/mlvl.mp3-0130eeac78dc619a7308bb7a8f02c335.mp3
 
 loop=true
 loop_offset=0
-bpm=53.33
+bpm=0
 beat_count=0
 bar_beats=4

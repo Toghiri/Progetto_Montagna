@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bv7o0wqnj7734"]
 
-[ext_resource type="Script" path="res://win_screen.gd" id="1_d13ik"]
+[ext_resource type="Script" path="res://scripts/win_screen.gd" id="1_b8ceb"]
 [ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="2_4fcd1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xfgwp"]
@@ -13,7 +13,7 @@ border_color = Color(0.890196, 0, 0, 1)
 border_blend = true
 
 [node name="WinScreen" type="CanvasLayer"]
-script = ExtResource("1_d13ik")
+script = ExtResource("1_b8ceb")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 anchors_preset = 15

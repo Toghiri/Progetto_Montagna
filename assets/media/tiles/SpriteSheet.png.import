@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gawd5l06h4g8"
-path="res://.godot/imported/SpriteSheet.png-c691fae8247289137a2761e952012fe3.ctex"
+path="res://godot/imported/SpriteSheet.png-c691fae8247289137a2761e952012fe3.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/media/tiles/SpriteSheet.png"
-dest_files=["res://.godot/imported/SpriteSheet.png-c691fae8247289137a2761e952012fe3.ctex"]
+dest_files=["res://godot/imported/SpriteSheet.png-c691fae8247289137a2761e952012fe3.ctex"]
 
 [params]
 
