@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://d3tk8wci3bd00" path="res://assets/media/tiles/props.png" id="12_g71yy"]
 [ext_resource type="PackedScene" uid="uid://s62m442mf620" path="res://nodes/player.tscn" id="13_yqojr"]
 [ext_resource type="PackedScene" uid="uid://gum1fcfo0tnw" path="res://nodes/timer.tscn" id="14_q6ke1"]
-[ext_resource type="AudioStream" uid="uid://d3gjbnw7agwar" path="res://assets/audio/mlvl1.mp3" id="15_pdql6"]
+[ext_resource type="AudioStream" uid="uid://etsdlkaiuaqp" path="res://assets/audio/mlvl.mp3" id="15_cfqn0"]
 [ext_resource type="PackedScene" uid="uid://jl1jktber0p5" path="res://nodes/asta.tscn" id="16_o8tvk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ayix"]
@@ -2003,7 +2003,7 @@ scale = Vector2(0.5, 0.5)
 metadata/_edit_use_anchors_ = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_pdql6")
+stream = ExtResource("15_cfqn0")
 autoplay = true
 
 [node name="Asta" parent="." instance=ExtResource("16_o8tvk")]

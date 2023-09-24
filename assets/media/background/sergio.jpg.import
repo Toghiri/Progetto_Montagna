@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb1oo4vtah76v"
-path="res://.godot/imported/sergio.jpg-9d2e2932e8bc0f7e3fd90b8737511744.ctex"
+path="res://godot/imported/sergio.jpg-9d2e2932e8bc0f7e3fd90b8737511744.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/media/background/sergio.jpg"
-dest_files=["res://.godot/imported/sergio.jpg-9d2e2932e8bc0f7e3fd90b8737511744.ctex"]
+dest_files=["res://godot/imported/sergio.jpg-9d2e2932e8bc0f7e3fd90b8737511744.ctex"]
 
 [params]
 

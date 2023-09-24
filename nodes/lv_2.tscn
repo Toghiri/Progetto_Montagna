@@ -11,10 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://24vifadtkvse" path="res://assets/media/tiles/Terrain (16x16).png" id="8_x21pn"]
 [ext_resource type="Texture2D" uid="uid://ypgspf8sbnen" path="res://assets/media/tiles/props2.png" id="9_ervxh"]
 [ext_resource type="Texture2D" uid="uid://gawd5l06h4g8" path="res://assets/media/tiles/SpriteSheet.png" id="11_4kflx"]
-[ext_resource type="AudioStream" uid="uid://d3gjbnw7agwar" path="res://assets/audio/mlvl1.mp3" id="15_mwxy8"]
 [ext_resource type="Texture2D" uid="uid://ciy7g18sccvp" path="res://assets/media/tiles/Checkpoint (No Flag).png" id="15_yuxew"]
 [ext_resource type="PackedScene" uid="uid://gum1fcfo0tnw" path="res://nodes/timer.tscn" id="16_85ws6"]
 [ext_resource type="PackedScene" uid="uid://jl1jktber0p5" path="res://nodes/asta.tscn" id="16_bmm3c"]
+[ext_resource type="AudioStream" uid="uid://etsdlkaiuaqp" path="res://assets/audio/mlvl.mp3" id="16_gwiwr"]
 [ext_resource type="PackedScene" uid="uid://bj35es1pqfsdx" path="res://nodes/orso.tscn" id="17_lv3nh"]
 [ext_resource type="PackedScene" uid="uid://rpjd2dc11po2" path="res://nodes/lupo.tscn" id="18_bisyg"]
 [ext_resource type="Texture2D" uid="uid://d3tk8wci3bd00" path="res://assets/media/tiles/props.png" id="18_l7ebp"]
@@ -2019,7 +2019,7 @@ scale = Vector2(0.5, 0.5)
 metadata/_edit_use_anchors_ = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_mwxy8")
+stream = ExtResource("16_gwiwr")
 autoplay = true
 
 [node name="Asta" parent="." instance=ExtResource("16_bmm3c")]

@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://d3tk8wci3bd00" path="res://assets/media/tiles/props.png" id="11_kdy6o"]
 [ext_resource type="PackedScene" uid="uid://bj35es1pqfsdx" path="res://nodes/orso.tscn" id="12_kk74b"]
 [ext_resource type="PackedScene" uid="uid://gum1fcfo0tnw" path="res://nodes/timer.tscn" id="14_6dre5"]
-[ext_resource type="AudioStream" uid="uid://d3gjbnw7agwar" path="res://assets/audio/mlvl1.mp3" id="14_i2x1w"]
+[ext_resource type="AudioStream" uid="uid://etsdlkaiuaqp" path="res://assets/audio/mlvl.mp3" id="14_47jwu"]
 [ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="15_nyah2"]
 [ext_resource type="PackedScene" uid="uid://jl1jktber0p5" path="res://nodes/asta.tscn" id="17_cv106"]
 [ext_resource type="PackedScene" uid="uid://rpjd2dc11po2" path="res://nodes/lupo.tscn" id="19_yxlw8"]
@@ -1960,7 +1960,7 @@ scale = Vector2(0.5, 0.5)
 metadata/_edit_use_anchors_ = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_i2x1w")
+stream = ExtResource("14_47jwu")
 autoplay = true
 
 [node name="Label" type="Label" parent="."]

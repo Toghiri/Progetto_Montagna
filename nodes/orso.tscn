@@ -1,8 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://bj35es1pqfsdx"]
+[gd_scene load_steps=22 format=3 uid="uid://bj35es1pqfsdx"]
 
 [ext_resource type="Script" path="res://scripts/orso.gd" id="1_cc4aa"]
 [ext_resource type="Texture2D" uid="uid://dwbwi4tvhxm01" path="res://assets/entities/orso/Bear.png" id="2_b1gxq"]
-[ext_resource type="Texture2D" uid="uid://c5bkfgowetmuv" path="res://assets/entities/spritesheet.png" id="3_yfolq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cbq1j"]
 atlas = ExtResource("2_b1gxq")
@@ -37,19 +36,15 @@ atlas = ExtResource("2_b1gxq")
 region = Rect2(72, 216, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0t82v"]
-atlas = ExtResource("3_yfolq")
 region = Rect2(0, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_djtuq"]
-atlas = ExtResource("3_yfolq")
 region = Rect2(16, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_srvhy"]
-atlas = ExtResource("3_yfolq")
 region = Rect2(32, 288, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3puf8"]
-atlas = ExtResource("3_yfolq")
 region = Rect2(48, 288, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8xs4g"]

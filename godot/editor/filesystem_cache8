@@ -1,0 +1,85 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1695462758
+export_presets.cfg::TextFile::-1::1695460657::0::1::::<><>::
+README.md::TextFile::-1::1694857096::0::1::::<><>::
+::res://assets/::1695460779
+assets_credits.txt::TextFile::-1::1695460296::0::1::::<><>::
+::res://assets/audio/::1695459374
+mlvl.mp3::AudioStreamMP3::321077408347149391::1695411442::1695462760::1::::<><>::
+mmm.mp3::AudioStreamMP3::2548650675248051623::1695407186::1695462760::1::::<><>::
+::res://assets/entities/::1695462584
+spritesheet.png::CompressedTexture2D::1619179830429179981::1695462577::1695462760::1::::<><>::
+::res://assets/entities/lupo/::1695407282
+Wolf.png::CompressedTexture2D::759740954743840984::1695407186::1695462760::1::::<><>::
+Wolf_Attack.png::CompressedTexture2D::2080246953961199656::1695407186::1695462760::1::::<><>::
+::res://assets/entities/orso/::1695407282
+Bear.png::CompressedTexture2D::8706832602555031844::1695407186::1695462760::1::::<><>::
+Bear_Attack.png::CompressedTexture2D::1591110969070749166::1695407186::1695462760::1::::<><>::
+::res://assets/entities/player/::1695459230
+char_blue.png::CompressedTexture2D::7394810018288689349::1695407186::1695462760::1::::<><>::
+::res://assets/fonts/::1695459277
+Pixeboy-z8XGD.ttf::FontFile::4299062628448393448::1695407186::1695462760::1::::<><>::
+::res://assets/media/::1695458669
+cursor.png::CompressedTexture2D::4326343752355285876::1695458580::1695462760::1::::<><>::
+icon.png::CompressedTexture2D::7343987023062154066::1695455670::1695462760::1::::<><>::
+loading.png::CompressedTexture2D::7987285982802484847::1695456877::1695462760::1::::<><>::
+::res://assets/media/background/::1695458209
+sergio.jpg::CompressedTexture2D::4897580628124820875::1685095221::1695462761::1::::<><>::
+::res://assets/media/background/menu/::1695458869
+controlbg.jpg::CompressedTexture2D::6093277835009483759::1695407186::1695462761::1::::<><>::
+lsbg.jpg::CompressedTexture2D::5200886546218048570::1695407186::1695462761::1::::<><>::
+mmbg3.jpg::CompressedTexture2D::2391637288321676236::1695407186::1695462761::1::::<><>::
+::res://assets/media/background/ParallaxBG/::1695407282
+Layer 1.png::CompressedTexture2D::4367041592801738137::1695407186::1695462760::1::::<><>::
+Layer 2.png::CompressedTexture2D::8190596147096217405::1695407186::1695462760::1::::<><>::
+Layer 3.png::CompressedTexture2D::5678318318031068835::1695407186::1695462760::1::::<><>::
+Layer 4.png::CompressedTexture2D::450156939289313320::1695407186::1695462760::1::::<><>::
+Layer 5.png::CompressedTexture2D::1420018414000158886::1695407186::1695462760::1::::<><>::
+Layer 6.png::CompressedTexture2D::1359458671180051304::1695407186::1695462760::1::::<><>::
+Reference.png::CompressedTexture2D::5025499185485814369::1695407186::1695462760::1::::<><>::
+::res://assets/media/tiles/::1695459025
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::7342064427166316622::1695407186::1695462760::1::::<><>::
+Checkpoint (No Flag).png::CompressedTexture2D::158407419368415153::1695407186::1695462760::1::::<><>::
+Idle.png::CompressedTexture2D::8926228897683615265::1695407186::1695462760::1::::<><>::
+props2.png::CompressedTexture2D::1715895156968312529::1695407186::1695462760::1::::<><>::
+props.png::CompressedTexture2D::9164440110402128319::1695407186::1695462760::1::::<><>::
+SpriteSheet.png::CompressedTexture2D::422475786921745001::1695407186::1695462760::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::1956255339072808092::1695407186::1695462760::1::::<><>::
+::res://godot/::0
+::res://godot/imported/::0
+Pixeboy-z8XGD.ttf-ce982ce46de4e07421d9a0833fce3774.fontdata::FontFile::-1::1695462759::0::1::::<><>::
+mmm.mp3-c4e0d7394d1e35a61a0847819103f03f.mp3str::AudioStreamMP3::-1::1695462760::0::1::::<><>::
+mlvl.mp3-0130eeac78dc619a7308bb7a8f02c335.mp3str::AudioStreamMP3::-1::1695462760::0::1::::<><>::
+::res://nodes/::1695462749
+asta.tscn::PackedScene::656003016630284840::1695462749::0::1::::<><>::uid://dcusy1ccn7wks::::res://assets/media/tiles/Checkpoint (Flag Idle)(64x64).png<>res://scripts/asta.gd<>uid://ciy7g18sccvp::::res://assets/media/tiles/Checkpoint (No Flag).png
+control_info.tscn::PackedScene::3499971323140943263::1695462749::0::1::::<><>::uid://cs2vnpoy6vifn::::res://assets/media/background/menu/controlbg.jpg<>res://scripts/control_info.gd<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+game_over_screen.tscn::PackedScene::50779234365749697::1695407186::0::1::::<><>::res://scripts/game_over_screen.gd<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+level_selection_vecchio.tscn::PackedScene::2706782933674455329::1695407186::0::1::::<><>::res://scripts/game_over_screen.gd<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+level_selector.tscn::PackedScene::4947571201268087573::1695462749::0::1::::<><>::res://scripts/level_selector.gd<>uid://cgdl3u3tffxhy::::res://assets/media/background/menu/lsbg.jpg<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+lupo.tscn::PackedScene::1224729241365582499::1695462749::0::1::::<><>::res://scripts/lupo.gd<>uid://k3a273r5e37i::::res://assets/entities/lupo/Wolf.png
+lv_1.tscn::PackedScene::1557091292868117447::1695462749::0::1::::<><>::res://scripts/lv_1.gd<>uid://cke3aci3vnkoy::::res://nodes/spikes.tscn<>uid://b3hosi1jlynn2::::res://assets/media/background/ParallaxBG/Layer 1.png<>uid://doxt6lxvto4f6::::res://assets/media/background/ParallaxBG/Layer 2.png<>uid://s62m442mf620::::res://nodes/player.tscn<>uid://cm5vcqqsq2wul::::res://assets/media/background/ParallaxBG/Layer 3.png<>uid://gocav8u5107u::::res://assets/media/background/ParallaxBG/Layer 4.png<>uid://uh4q4fmqpmyo::::res://assets/media/background/ParallaxBG/Layer 5.png<>uid://tmsc6cfh3o7a::::res://assets/media/background/ParallaxBG/Layer 6.png<>uid://24vifadtkvse::::res://assets/media/tiles/Terrain (16x16).png<>uid://ypgspf8sbnen::::res://assets/media/tiles/props2.png<>uid://gawd5l06h4g8::::res://assets/media/tiles/SpriteSheet.png<>uid://d3tk8wci3bd00::::res://assets/media/tiles/props.png<>uid://bj35es1pqfsdx::::res://nodes/orso.tscn<>uid://gum1fcfo0tnw::::res://nodes/timer.tscn<>uid://etsdlkaiuaqp::::res://assets/audio/mlvl.mp3<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf<>uid://jl1jktber0p5::::res://nodes/asta.tscn<>uid://rpjd2dc11po2::::res://nodes/lupo.tscn
+lv_2.tscn::PackedScene::4415258623606522387::1695462749::0::1::::<><>::res://scripts/lv_2.gd<>uid://b3hosi1jlynn2::::res://assets/media/background/ParallaxBG/Layer 1.png<>uid://doxt6lxvto4f6::::res://assets/media/background/ParallaxBG/Layer 2.png<>uid://gocav8u5107u::::res://assets/media/background/ParallaxBG/Layer 4.png<>uid://cm5vcqqsq2wul::::res://assets/media/background/ParallaxBG/Layer 3.png<>uid://uh4q4fmqpmyo::::res://assets/media/background/ParallaxBG/Layer 5.png<>uid://tmsc6cfh3o7a::::res://assets/media/background/ParallaxBG/Layer 6.png<>uid://cb1oo4vtah76v::::res://assets/media/background/sergio.jpg<>uid://24vifadtkvse::::res://assets/media/tiles/Terrain (16x16).png<>uid://ypgspf8sbnen::::res://assets/media/tiles/props2.png<>uid://gawd5l06h4g8::::res://assets/media/tiles/SpriteSheet.png<>uid://ciy7g18sccvp::::res://assets/media/tiles/Checkpoint (No Flag).png<>uid://gum1fcfo0tnw::::res://nodes/timer.tscn<>uid://jl1jktber0p5::::res://nodes/asta.tscn<>uid://etsdlkaiuaqp::::res://assets/audio/mlvl.mp3<>uid://bj35es1pqfsdx::::res://nodes/orso.tscn<>uid://rpjd2dc11po2::::res://nodes/lupo.tscn<>uid://d3tk8wci3bd00::::res://assets/media/tiles/props.png<>uid://s62m442mf620::::res://nodes/player.tscn<>uid://cke3aci3vnkoy::::res://nodes/spikes.tscn<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+main_menu.tscn::PackedScene::5708303661586890693::1695462748::0::1::::<><>::res://scripts/main_menu.gd<>uid://bacr6fyuxwhia::::res://assets/media/background/menu/mmbg3.jpg<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf<>uid://bckt50k8uropj::::res://assets/audio/mmm.mp3
+orso.tscn::PackedScene::3077752492796027341::1695462749::0::1::::<><>::res://scripts/orso.gd<>uid://dwbwi4tvhxm01::::res://assets/entities/orso/Bear.png
+panorama.tscn::PackedScene::7329759791587797734::1695462748::0::1::::<><>::res://scripts/panorama.gd<>uid://b3hosi1jlynn2::::res://assets/media/background/ParallaxBG/Layer 1.png<>uid://doxt6lxvto4f6::::res://assets/media/background/ParallaxBG/Layer 2.png<>uid://gocav8u5107u::::res://assets/media/background/ParallaxBG/Layer 4.png<>uid://cm5vcqqsq2wul::::res://assets/media/background/ParallaxBG/Layer 3.png<>uid://uh4q4fmqpmyo::::res://assets/media/background/ParallaxBG/Layer 5.png<>uid://tmsc6cfh3o7a::::res://assets/media/background/ParallaxBG/Layer 6.png<>uid://24vifadtkvse::::res://assets/media/tiles/Terrain (16x16).png<>uid://ypgspf8sbnen::::res://assets/media/tiles/props2.png<>uid://gawd5l06h4g8::::res://assets/media/tiles/SpriteSheet.png<>uid://ciy7g18sccvp::::res://assets/media/tiles/Checkpoint (No Flag).png<>uid://d3tk8wci3bd00::::res://assets/media/tiles/props.png<>uid://s62m442mf620::::res://nodes/player.tscn<>uid://gum1fcfo0tnw::::res://nodes/timer.tscn<>uid://etsdlkaiuaqp::::res://assets/audio/mlvl.mp3<>uid://jl1jktber0p5::::res://nodes/asta.tscn
+pause_menu.tscn::PackedScene::1812162583785603523::1695407186::0::1::::<><>::res://scripts/pause_menu.gd<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+player.tscn::PackedScene::1329057253411497267::1695462749::0::1::::<><>::res://scripts/player.gd<>uid://ddmdo8ltufduj::::res://assets/entities/player/char_blue.png
+spikes.tscn::PackedScene::5484687509286139604::1695407186::0::1::::<><>::res://scripts/spikes.gd<>uid://d0f6xk165p6wb::::res://assets/media/tiles/Idle.png
+timer.tscn::PackedScene::463195917417365092::1695407186::0::1::::<><>::uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf<>res://scripts/timer.gd
+win_screen.tscn::PackedScene::3927342351802603909::1695462749::0::1::::<><>::res://scripts/win_screen.gd<>uid://b2iq6y87f18d5::::res://assets/fonts/Pixeboy-z8XGD.ttf
+::res://scripts/::1695462686
+asta.gd::GDScript::-1::1695414406::0::1::::<>Node2D<>::
+control_info.gd::GDScript::-1::1695414423::0::1::::<>Control<>::
+game_over_screen.gd::GDScript::-1::1695414434::0::1::::<>CanvasLayer<>::
+level_selector.gd::GDScript::-1::1695414449::0::1::::<>Control<>::
+lupo.gd::GDScript::-1::1695414674::0::1::::<>Node2D<>::
+lv_1.gd::GDScript::-1::1695414479::0::1::::<>Node2D<>::
+lv_2.gd::GDScript::-1::1695414490::0::1::::<>Node2D<>::
+main_menu.gd::GDScript::-1::1695462686::0::1::::<>Control<>::
+orso.gd::GDScript::-1::1695414674::0::1::::<>Node2D<>::
+panorama.gd::GDScript::-1::1695414546::0::1::::<>Node2D<>::
+pause_menu.gd::GDScript::-1::1695414546::0::1::::<>CanvasLayer<>::
+player.gd::GDScript::-1::1695414625::0::1::::<>CharacterBody2D<>::
+spikes.gd::GDScript::-1::1695407186::0::1::::<>Node2D<>::
+timer.gd::GDScript::-1::1695407186::0::1::::<>Label<>::
+win_screen.gd::GDScript::-1::1695407186::0::1::::<>CanvasLayer<>::

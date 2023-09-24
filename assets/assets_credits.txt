@@ -1,0 +1,28 @@
+##Tiles
+    #Player
+        https://brullov.itch.io/oak-woods
+    #Bear and wolf
+        Electric Lemon Games
+    #Terrain
+        https://pixelfrog-assets.itch.io/pixel-adventure-1
+    #Details
+        1 Luis Zuno @ansimuz
+        2 https://lv99.itch.io/pixel-tileset-mountains
+
+##Main Menu Music
+FesliyanStudios.com
+
+##Levels Music
+Thomas McGrath
+
+##UI Backgrounds
+leonardo.ai
+
+##Parallax Background
+https://monibtaha.itch.io/mountains-parallaxe-background
+
+##Cursor
+https://wenrexa.itch.io/cursors-pack-03
+
+##Font
+Pixeboy-z8XGD

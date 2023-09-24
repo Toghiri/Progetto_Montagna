@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cm5vcqqsq2wul"
-path="res://.godot/imported/Layer 3.png-b7bd894f35e3ed4d77dc0b9b597da1e7.ctex"
+path="res://godot/imported/Layer 3.png-b7bd894f35e3ed4d77dc0b9b597da1e7.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/media/background/ParallaxBG/Layer 3.png"
-dest_files=["res://.godot/imported/Layer 3.png-b7bd894f35e3ed4d77dc0b9b597da1e7.ctex"]
+dest_files=["res://godot/imported/Layer 3.png-b7bd894f35e3ed4d77dc0b9b597da1e7.ctex"]
 
 [params]
 
