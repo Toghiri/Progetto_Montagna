@@ -9,7 +9,7 @@ func _ready():
 	animation = $AreaOrso/AnimazioneOrso
 	movementPosition = $AnimationPlayer
 
-func _process(delta):
+func _process(_delta):
 	animation.play("orso2")
 	if movementPosition.current_animation_position < 0.1 :
 		animation.flip_h = false
@@ -26,5 +26,5 @@ func _on_area_orso_body_entered(body):
 			queue_free()
 		else: pass
 
-func _on_area_2_dkill_body_entered(body):
+func _on_area_2_dkill_body_entered(_body):
 	dead = 1

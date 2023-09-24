@@ -3,7 +3,7 @@ extends CanvasLayer
 func _ready():
 	$PanelContainer/MarginContainer/Raws/CenterContainer/VBoxContainer/ResumeButton.grab_focus()
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("esc"):
 		get_tree().paused = false
 		get_parent().remove_child(self)

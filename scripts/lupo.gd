@@ -9,14 +9,14 @@ func _ready():
 	animation = $AreaLupo/AnimazioneLupo
 	movementPosition = $AnimationPlayer
 
-func _process(delta):
+func _process(_delta):
 	animation.play("walk")
 	if movementPosition.current_animation_position < 0.1 :
 		animation.flip_h = false
 	if movementPosition.current_animation_position > 2.5:
 		animation.flip_h = true
 		
-func _on_area_2_dkill_body_entered(body):
+func _on_area_2_dkill_body_entered(_body):
 	dead = 1
 
 func _on_area_lupo_body_entered(body):

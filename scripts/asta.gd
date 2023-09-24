@@ -1,7 +1,7 @@
 extends Node2D
 const WinScreen = preload("res://nodes/win_screen.tscn")
 
-func _process(delta):
+func _process(_delta):
 	$Area2D/AnimatedSprite2D.play("default")
 
 func _on_area_2d_body_entered(body):
