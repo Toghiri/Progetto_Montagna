@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1f8mpo7wgk6f"]
+
+[ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="1_1i3j5"]
+
+[node name="MobileControl" type="CanvasLayer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Jump" type="Button" parent="HBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../LevelsButton")
+theme_override_fonts/font = ExtResource("1_1i3j5")
+theme_override_font_sizes/font_size = 64
+text = "^ 
+  |  "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Left" type="Button" parent="HBoxContainer/HBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../LevelsButton")
+theme_override_fonts/font = ExtResource("1_1i3j5")
+theme_override_font_sizes/font_size = 64
+text = " <- "
+
+[node name="Right" type="Button" parent="HBoxContainer/HBoxContainer"]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 8
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_bottom = NodePath("../LevelsButton")
+theme_override_fonts/font = ExtResource("1_1i3j5")
+theme_override_font_sizes/font_size = 64
+text = " -> "
