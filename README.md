@@ -1,21 +1,8 @@
 # Progetto_Montagna
-Progetto di 5 giorni per sviluppare un gioco su Godot Engine.
 
-## Commit Description
+A very simple scrolling 2D platformer in the environment of Trentino Alto-Adige (IT).
 
-Commit message convention
-The project adhere to the semantic commit convention.
-
-<**type**>: <**description**>
-
-- **build**: Changes that affect the build system or external dependencies
-- **feat**: A new feature
-- **fix**: A bug fix
-- **perf**: A code change that improves performance
-- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- **test**: Adding missing tests or correcting existing tests
-- **revert**: Revert a previous commit. Please add a reference to reverted commit (Refs: a215868)
-- **other**: Something else
+The project originally was a challenge to develop a full game in 5 days during a vacation in Trentino Alto-Adige, completed with v1.0.
 
 ## Licence
 
