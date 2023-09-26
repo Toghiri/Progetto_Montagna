@@ -119,8 +119,8 @@ theme_override_constants/shadow_offset_x = 10
 theme_override_constants/shadow_offset_y = -10
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("2_nhr4k")
-theme_override_font_sizes/font_size = 128
-text = "JUMP:    W    /    SPACE    /    LCLICK"
+theme_override_font_sizes/font_size = 116
+text = "JUMP:    W    /    SPACE    /    LCLICK + SHIFT"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
