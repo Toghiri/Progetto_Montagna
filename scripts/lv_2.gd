@@ -11,9 +11,3 @@ func _process(delta):
 		var pause = PauseScreen.instantiate()
 		add_child(pause)
 		get_tree().paused = true
-
-func _on_area_2d_body_entered(body):
-	var game_over = GameOverScreen.instantiate()
-	add_child(game_over)
-	print("Sei morto fra")
-	get_tree().paused = true

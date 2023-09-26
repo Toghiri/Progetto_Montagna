@@ -1,47 +1,60 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1f8mpo7wgk6f"]
+[gd_scene load_steps=3 format=3 uid="uid://c1f8mpo7wgk6f"]
 
 [ext_resource type="FontFile" uid="uid://b2iq6y87f18d5" path="res://assets/fonts/Pixeboy-z8XGD.ttf" id="1_1i3j5"]
+[ext_resource type="Script" path="res://scripts/mobile_control.gd" id="1_yackg"]
 
 [node name="MobileControl" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_yackg")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 169.0
+offset_top = 753.0
+offset_right = -93.0
+offset_bottom = -171.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 1200
 
 [node name="Jump" type="Button" parent="HBoxContainer"]
 process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-focus_neighbor_top = NodePath("../QuitButton")
-focus_neighbor_bottom = NodePath("../LevelsButton")
+focus_mode = 0
 theme_override_fonts/font = ExtResource("1_1i3j5")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 text = "^ 
   |  "
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 30
 
 [node name="Left" type="Button" parent="HBoxContainer/HBoxContainer"]
 process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
-focus_neighbor_top = NodePath("../QuitButton")
-focus_neighbor_bottom = NodePath("../LevelsButton")
+focus_mode = 0
 theme_override_fonts/font = ExtResource("1_1i3j5")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 text = " <- "
 
 [node name="Right" type="Button" parent="HBoxContainer/HBoxContainer"]
 process_mode = 3
 layout_mode = 2
 size_flags_vertical = 8
-focus_neighbor_top = NodePath("../QuitButton")
-focus_neighbor_bottom = NodePath("../LevelsButton")
+focus_mode = 0
 theme_override_fonts/font = ExtResource("1_1i3j5")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 128
 text = " -> "
+
+[connection signal="button_down" from="HBoxContainer/Jump" to="." method="_on_jump_button_down"]
+[connection signal="button_up" from="HBoxContainer/Jump" to="." method="_on_jump_button_up"]
+[connection signal="button_down" from="HBoxContainer/HBoxContainer/Left" to="." method="_on_left_button_down"]
+[connection signal="button_up" from="HBoxContainer/HBoxContainer/Left" to="." method="_on_left_button_up"]
+[connection signal="button_down" from="HBoxContainer/HBoxContainer/Right" to="." method="_on_right_button_down"]
+[connection signal="button_up" from="HBoxContainer/HBoxContainer/Right" to="." method="_on_right_button_up"]
